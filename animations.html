@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Graphics | Tabitha Karaba</title>
+    <meta name="author" content="Tabitha Karaba">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/your-logo-image.png" alt="Logo" class="logo-image" id="logo-image">
+            </a>
+            <a href="index.html" class="logo" id="logo">Tabitha Karaba</a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Work</a>
+            <a href="#" id="about-link">About</a>
+            <a href="#" id="contact-link">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+
+    <main class="animations-page">
+        <section class="page-hero">
+            <h1>Motion Graphics</h1>
+            <p class="page-subtitle">Personal Animation Projects</p>
+            <div class="intro-text">
+                <p>A collection of personal projects exploring motion design techniques and creative storytelling. These animations showcase my proficiency with Cinema 4D, After Effects, and Illustrator, demonstrating both technical skills and artistic vision. From 3D modeling to dynamic compositing, each piece represents an experiment in pushing my capabilities as a motion designer.</p>
+            </div>
+        </section>
+
+        <section class="animation-showcase">
+            <!-- Reel at the top -->
+            <div class="animation-item reel">
+                <h2>Animation Reel</h2>
+                <video controls>
+                    <source src="animation/reel.mp4" type="video/mp4">
+                </video>
+                <p class="caption">Selection of motion graphics work from 2023-2025</p>
+            </div>
+
+            <!-- Individual projects -->
+            <div class="animation-item">
+                <h3>Glass City</h3>
+                <video controls>
+                    <source src="animation/city.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="animation-item">
+                <h3>Z-series product modeling</h3>
+                <video controls>
+                    <source src="animation/zseries.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="animation-item">
+                <h3>Orb simulation</h3>
+                <video controls>
+                    <source src="animation/orb.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="animation-item">
+                <h3>Alien football</h3>
+                <video controls >
+                    <source src="animation/league.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="animation-item">
+                <h3>Boba Chai</h3>
+                <video controls >
+                    <source src="animation/boba.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section class="project-navigation">
+            <a href="boba.html" class="prev-project">&larr; Bubble Chai</a>
+            <a href="index.html" class="back-to-work">Back to Home</a>
+            <!-- <a href="#" class="next-project">Next Project &rarr;</a> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span>2025</span> Tabitha Karaba</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+        <!-- About Sidebar (add to all pages) -->
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <h1>Hi! I'm Tabi!</h1>
+        <p class="subtitle">- a Video and Motion Designer - <br>based in Tempe, Arizona.</p>
+        <div class="about-content">
+            <p>I specialize in creating dynamic digital content across multimedia platforms.</p>
+            <hr>
+            <p>I enjoy crafting engaging content across various mediums. My passion for visual design inspires me to blend photo/videography, editing, and motion graphics into cohesive storytelling.</p>
+            <p>When the opportunity arises, I also like to employ my web design and development chops. My portfolio reflects a dedication to storytelling and design thinking, making each project a unique exploration of immersive visual narratives that cater to the audience's needs while realizing the creative vision.</p>
+        </div>
+    </div>
+
+    <!-- Contact Popup (add to all pages) -->
+    <div class="social-popup" id="social-popup">
+        <span class="close-btn" id="close-social-btn">&times;</span>
+        <h2>Let's Connect!</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/tabitha-karaba" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/karaba_tabi/?hl=en" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Overlay (add to all pages) -->
+    <div class="overlay" id="overlay"></div>
+    </body>
+</html>

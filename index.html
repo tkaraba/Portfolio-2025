@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabitha Karaba Portfolio</title>
+    <meta name="author" content="Tabitha Karaba">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo" id="logo">Tabitha Karaba</div>
+        <nav class="nav-links">
+            <a href="#projects">Work</a>
+            <a href="#" id="about-link">About</a>
+            <a href="#" id="contact-link">Contact</a> <!-- Updated Contact link -->
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Sidebar for About -->
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <h1>Hi! I'm Tabi!</h1>
+        <p class="subtitle">- Video Editor and Motion Designer - <br>based in Tempe, Arizona.</p>
+        <div class="about-content">
+            <p>I specialize in creating dynamic digital content across multimedia platforms.</p>
+            <hr>
+            <p>I enjoy crafting engaging content across various mediums. My passion for visual design inspires me to blend photo/videography, editing, and motion graphics into cohesive storytelling.</p>
+            <p>When the opportunity arises, I also like to employ my web design and development chops. My portfolio reflects a dedication to storytelling and design thinking, making each project a unique exploration of immersive visual narratives that cater to the audience's needs while realizing the creative vision.</p>
+        </div>
+    </div>
+
+    <!-- Pop-up for Contact -->
+    <div class="social-popup" id="social-popup">
+        <span class="close-btn" id="close-social-btn">&times;</span>
+        <h2>Let's Connect!</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/tabitha-karaba" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/karaba_tabi/?hl=en" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="videos/hero.mp4" type="video/mp4">
+        </video>
+        <!-- <div class="hero-text">
+            <h1>Hi! I'm Tabi!</h1>
+            <p>Motion | Video | Graphics</p>
+        </div> -->
+    </section>
+
+    <section id="projects">
+        <a href="california.html" class="project-card" aria-label="View portfolio project california connect">
+            <video src="california/v3.mp4" muted loop></video>
+            <h2>California Connect</h2>
+        </a>
+        <a href="znuni.html" class="project-card" aria-label="">
+            <video src="znuni/vid.mp4" muted loop></video>
+            <h2>Znuni Mobile Branding</h2>
+        </a>
+        <a href="highlights.html" class="project-card" aria-label="">
+            <video src="highlights/v3.mp4" muted loop></video>
+            <h2>Highlights and Trailers</h2>
+        </a>
+        <a href="faculty.html" class="project-card" aria-label="">
+            <video src="faculty/v.1mp4.mp4" muted loop></video>
+            <h2>Faculty Explains</h2>
+        </a>
+        <a href="thumbnails.html" class="project-card" aria-label="">
+            <video src="thumbnails/v1.mp4" muted loop></video>
+            <h2>Custom Thumbnails</h2>
+        </a>
+        <a href="boba.html" class="project-card" aria-label="">
+            <video src="boba/boba.mp4" muted loop></video>
+            <h2>Boba Chai</h2>
+        </a>
+        <a href="animations.html" class="project-card" aria-label="">
+            <video src="animation/reel.mp4" muted loop></video>
+            <h2>3D & 2D Animations</h2>
+        </a>    
+    </section>
+
+    <footer>
+        <p>Copyright &copy; <span>2025</span> Tabitha Karaba</p>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Highlights | Tabitha Karaba</title>
+    <meta name="author" content="Tabitha Karaba">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/your-logo-image.png" alt="Logo" class="logo-image" id="logo-image">
+            </a>
+            <a href="index.html" class="logo" id="logo">Tabitha Karaba</a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Work</a>
+            <a href="#" id="about-link">About</a>
+            <a href="#" id="contact-link">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main class="project-page">
+        <section class="project-hero">
+            <h1>Video Highlights</h1>
+            <p class="project-subtitle">Promotional & Documentary Editing</p>
+            <div class="project-tags">
+                <span>Video Editing</span>
+                <span>Motion Graphics</span>
+                <span>Collaborative Projects</span>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="detail-section">
+                <h2>Scope</h2>
+                <p>A collection of promotional videos created for ASU Online, showcasing my expertise in video editing and motion graphics. These projects involved close collaboration with designers, stakeholders, and content creators to effectively market educational resources and student success stories.</p>
+            </div>
+
+            <div class="detail-section">
+                <h2>Process</h2>
+                <ul>
+                    <li>Edited raw footage into compelling narratives with pacing tailored to target audiences</li>
+                    <li>Created motion graphics and animated text sequences to enhance messaging</li>
+                    <li>Collaborated with designers to maintain brand consistency across all assets</li>
+                    <li>Implemented stakeholder feedback through multiple revision cycles</li>
+                    <li>Optimized videos for various digital platforms and viewing contexts</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="video-showcase">
+            <h2>Featured Projects</h2>
+            
+            <div class="video-group">
+                <h3>Program Overview Trailers</h3>
+                <p>Highlighting course offerings and requirements for prospective students</p>
+                <div class="video-grid">
+                    <video controls poster="highlights/mcs.png">
+                        <source src="highlights/v4.mp4" type="video/mp4">
+                    </video>
+                    <video controls poster="highlights/msp.png">
+                        <source src="highlights/v5.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="video-group">
+                <h3>Student Success Stories</h3>
+                <p>Celebrating the impact of online learning through alumni experiences</p>
+                <div class="video-grid">
+                    <video controls>
+                        <source src="highlights/v2.mp4" type="video/mp4">
+                    </video>
+                    <video controls poster="highlights/shifflett.png">
+                        <source src="highlights/v3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="video-group">
+                <h3>Educational Content</h3>
+                <p>Documenting immersive learning experiences</p>
+                <div class="video-single">
+                    <video controls poster="highlights/ff.png">
+                        <source src="highlights/foodfarm.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-navigation">
+            <a href="znuni.html" class="prev-project">&larr; Znüni</a>
+            <a href="index.html#projects" class="back-to-work">Back to Work</a>
+            <a href="faculty.html" class="next-project">Next Project &rarr;</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span>2025</span> Tabitha Karaba</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+         <!-- About Sidebar (add to all pages) -->
+         <div class="sidebar" id="sidebar">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h1>Hi! I'm Tabi!</h1>
+            <p class="subtitle">- a Video and Motion Designer - <br>based in Tempe, Arizona.</p>
+            <div class="about-content">
+                <p>I specialize in creating dynamic digital content across multimedia platforms.</p>
+            <hr>
+            <p>I enjoy crafting engaging content across various mediums. My passion for visual design inspires me to blend photo/videography, editing, and motion graphics into cohesive storytelling.</p>
+            <p>When the opportunity arises, I also like to employ my web design and development chops. My portfolio reflects a dedication to storytelling and design thinking, making each project a unique exploration of immersive visual narratives that cater to the audience's needs while realizing the creative vision.</p>
+            </div>
+        </div>
+    
+        <!-- Contact Popup (add to all pages) -->
+        <div class="social-popup" id="social-popup">
+            <span class="close-btn" id="close-social-btn">&times;</span>
+            <h2>Let's Connect!</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tabitha-karaba" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/karaba_tabi/?hl=en" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Overlay (add to all pages) -->
+        <div class="overlay" id="overlay"></div>
+    </body>
+</html>
