@@ -30,23 +30,28 @@
     
 
     <main class="animations-page">
+        
+        
         <section class="page-hero">
             <h1>Motion Graphics</h1>
-            <p class="page-subtitle">Personal Animation Projects</p>
-            <div class="intro-text">
-                <p>A collection of personal projects exploring motion design techniques and creative storytelling. These animations showcase my proficiency with Cinema 4D, After Effects, and Illustrator, demonstrating both technical skills and artistic vision. From 3D modeling to dynamic compositing, each piece represents an experiment in pushing my capabilities as a motion designer.</p>
-            </div>
-        </section>
-
-        <section class="animation-showcase">
-            <!-- Reel at the top -->
+            <!-- <p class="page-subtitle">Personal Animation Projects</p> -->
+             <!-- Reel at the top -->
             <div class="animation-item reel">
-                <h2>Animation Reel</h2>
-                <video controls>
+                <!-- <h2>Animation Reel</h2> -->
+                <video controls autoplay muted loop>
                     <source src="animation/reel.mp4" type="video/mp4">
                 </video>
                 <p class="caption">Selection of motion graphics work from 2023-2025</p>
             </div>
+
+            <div class="intro-text">
+                <p>A collection of personal projects exploring motion design techniques and creative storytelling. These animations showcase my proficiency with Cinema 4D, After Effects, and Illustrator, demonstrating both technical skills and artistic vision. From 3D modeling to dynamic compositing, each piece represents an experiment in pushing my capabilities as a motion designer.</p>
+            </div>
+
+            
+        </section>
+
+        <section class="animation-showcase">
 
             <!-- Individual projects -->
             <div class="animation-item">
@@ -99,17 +104,41 @@
     <script src="script.js"></script>
 
         <!-- About Sidebar (add to all pages) -->
-    <div class="sidebar" id="sidebar">
-        <span class="close-btn" id="close-btn">&times;</span>
-        <h1>Hi! I'm Tabi!</h1>
-        <p class="subtitle">- a Video and Motion Designer - <br>based in Tempe, Arizona.</p>
-        <div class="about-content">
-            <p>I specialize in creating dynamic digital content across multimedia platforms.</p>
-            <hr>
-            <p>I enjoy crafting engaging content across various mediums. My passion for visual design inspires me to blend photo/videography, editing, and motion graphics into cohesive storytelling.</p>
-            <p>When the opportunity arises, I also like to employ my web design and development chops. My portfolio reflects a dedication to storytelling and design thinking, making each project a unique exploration of immersive visual narratives that cater to the audience's needs while realizing the creative vision.</p>
+        <div class="sidebar" id="sidebar">
+            <span class="close-btn" id="close-btn">&times;</span>
+            
+            <div class="about-header">
+                <!-- <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Tabitha Karaba">
+                </div> -->
+                <h1>Hi! I'm Tabi!</h1>
+                <p class="tagline">Video Editor & Motion Graphics Designer</p>
+            </div>
+        
+            <div class="about-content">
+                <div class="about-section">
+                    <h3><i class="fas fa-compass"></i> My Approach</h3>
+                    <p>I specialize in creating dynamic digital content across multimedia platforms, blending technical precision with design thinking to craft compelling narratives.</p>
+                </div>
+        
+                <div class="about-section">
+                    <h3><i class="fas fa-magic"></i> My Skills</h3>
+                    <ul class="skills-list">
+                        <li>Video Production</li>
+                        <li>Motion Graphics</li>
+                        <li>Brand Storytelling</li>
+                        <li>3D Animation</li>
+                        <li>Interactive Media</li>
+                    </ul>
+                </div>
+        
+                <div class="about-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Currently</h3>
+                    <p>Based in Tempe, Arizona<br>
+                    Creating immersive visual experiences.</p>
+                </div>
+            </div>
         </div>
-    </div>
 
     <!-- Contact Popup (add to all pages) -->
     <div class="social-popup" id="social-popup">
