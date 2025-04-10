@@ -40,6 +40,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    document.addEventListener('DOMContentLoaded', function() {
+        const lazyVideos = [].slice.call(document.querySelectorAll('video[data-src]'));
+        
+        if ('IntersectionObserver' in window) {
+          let lazyVideoObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(video) {
+              if (video.isIntersecting) {
+                for (var source in video.target.children) {
+                  var videoSource = video.target.children[source];
+                  if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
+                    videoSource.src = videoSource.dataset.src;
+                  }
+                }
+                video.target.load();
+                lazyVideoObserver.unobserve(video.target);
+              }
+            });
+          });
+          
+          lazyVideos.forEach(function(lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+          });
+        }
+      });
+          
     // Video Hover Auto Play & Pause
     const projectCards = document.querySelectorAll('.project-card video');
     projectCards.forEach(video => {

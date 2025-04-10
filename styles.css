@@ -843,6 +843,8 @@ h2 {
     font-style: italic;
 }
 
+
+
 @media (max-width: 1024px) {
     .sidebar {
         width: 45%;
