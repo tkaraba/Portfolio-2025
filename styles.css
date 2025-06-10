@@ -1,13 +1,75 @@
-/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+  /* Light Mode Colors */
+:root {
+    --bg-color: #111;
+    --text-color: #fff;
+    --accent-color: #f8ecec;
+    --card-bg: #222;
+    --toggle-bg: #000000;
+    --toggle-ball: #fff;
+    --toggle-icon: #ff6b6b;
+    --logo-color: #f9f4fa;
+    --hamburger-color: #f9f9f9;
+    --project-subtitle: #ccc;
+}
+
+
   
 body {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: 'Helvetica Neue', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
@@ -16,7 +78,7 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    background: #111;
+    background: var(--bg-color);
     padding: 2rem 3rem;
     display: flex;
     justify-content: space-between;
@@ -29,7 +91,7 @@ body {
     font-size: 4rem;
     font-weight: bold;
     transition: font-size 0.5s ease, transform 0.5s ease;
-    color: aliceblue;
+    color: var(--logo-color);
     text-decoration: none;
 }
   
@@ -50,9 +112,14 @@ body {
     font-size: 1.2rem;
 }
   
-  .navbar nav a:hover {
+.navbar nav a:hover {
     text-decoration: underline;
 }
+
+a, .navbar nav a {
+    color: var(--accent-color);
+}
+
 .hamburger {
     display: none; /* Hide by default */
     flex-direction: column;
@@ -66,7 +133,7 @@ body {
 .hamburger span {
     width: 100%;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--hamburger-color);
     transition: all 0.3s ease;
 }
 
@@ -119,7 +186,7 @@ body {
   
 .hero p {
     font-size: 2rem;
-    color: #ccc;
+    color: var(--logo-color);
 }
 
 /* quick edit */
@@ -342,7 +409,7 @@ body {
 }
   
 .project-card {
-    background: #222;
+    background: var(--card-bg);
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -843,7 +910,83 @@ h2 {
     font-style: italic;
 }
 
+/* Tools Section Styles */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
 
+.tool-item {
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tool-item:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-3px);
+}
+
+.tool-item i {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 8px;
+    color: #ff6b6b;
+}
+
+.tool-item span {
+    font-size: 0.8rem;
+    display: block;
+    line-height: 1.3;
+}
+/* Theme Toggle Styles */
+.theme-toggle {
+    position: relative;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.theme-toggle-label {
+    width: 50px;
+    height: 26px;
+    background: var(--toggle-bg, #333);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--toggle-ball, #fff);
+    border-radius: 50%;
+    left: 3px;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+#theme-toggle-checkbox:checked + .theme-toggle-label .theme-toggle-ball {
+    transform: translateX(24px);
+}
+
+.theme-toggle-label i {
+    font-size: 14px;
+    color: var(--toggle-icon, #ff6b6b);
+}
 
 @media (max-width: 1024px) {
     .sidebar {
@@ -978,6 +1121,15 @@ h2 {
     
     .intro-text {
         padding: 0 1rem;
+    }
+    /* tools */
+    .tools-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+    
+    .tool-item {
+        padding: 8px;
     }
 }
 

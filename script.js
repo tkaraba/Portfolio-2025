@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+
     // About Popup
     const aboutLink = document.getElementById('about-link');
     const sidebar = document.getElementById('sidebar');
@@ -140,4 +141,5 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.classList.toggle('active');
         });
     }
+
 });
