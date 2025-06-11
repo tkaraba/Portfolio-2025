@@ -172,6 +172,43 @@ a, .navbar nav a {
     object-fit: cover;
     z-index: -1;
 }
+.unmute-btn {
+    position: absolute;
+    bottom: 150px;
+    right: 20px;
+    padding: 10px 16px;
+    background-color: rgba(85, 138, 216, 0.5);
+    color: white;
+    border:2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s ease, transform 0.2s ease;
+    /* Always show the button */
+    display: block !important;
+}
+
+.unmute-btn:hover {
+    background-color: rgba(4, 0, 0, 0.2);
+    transform: scale(1.1);
+    box-shadow: rgba(85, 138, 216, 0.5);
+}
+
+.sound-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sound-icon.muted {
+    background-image: url('icons/muted.svg'); /* use a modern muted icon */
+}
+
+.sound-icon.unmuted {
+    background-image: url('icons/unmuted.svg'); /* use a speaker icon */
+}
 
 .hero-text { 
     position: relative;
