@@ -194,17 +194,6 @@ a, .navbar nav a {
     box-shadow: rgba(85, 138, 216, 0.5);
 }
 
-.sound-icon {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.sound-icon.muted {
-    background-image: url('icons/muted.svg'); /* use a modern muted icon */
-}
 
 .sound-icon.unmuted {
     background-image: url('icons/unmuted.svg'); /* use a speaker icon */
